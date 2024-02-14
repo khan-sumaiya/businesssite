@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* my screen-size: 1440px*/
+
+/* write ---> font-family: 'Playfair ####', serif; in rulesets*/
+
+@font-face {
+    font-family: "Playfair Black";
+    src: url(./fonts/static/PlayfairDisplay-Black.ttf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Playfair Bold";
+    src: url(./fonts/static/PlayfairDisplay-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Playfair Regular";
+    src: url(./fonts/static/PlayfairDisplay-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Playfair Regular-Italic";
+    src: url(./fonts/static/PlayfairDisplay-Italic.ttf);
+    font-weight: 400;
+}
+
+html {
+    font-size: 18px;
+    background-color: #F0F2F2;
+    color: #02060D;
+}
+
+body {
+    font-family: "Playfair Regular", serif;
+}
+
+.bannerclip {
+    position: relative;
+    width: 100%;
+    padding-top: 1.11rem;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.bannertext {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    text-align: center;
+    z-index: 1;
+    color: #F0F2F2;
+}
+
+.main {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-family: "Playfair Bold";
+}
+
+.bannertext p {
+    margin-bottom: 30px;
+}
+
+
+.navbar {
+    height: 3.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    background-color: #F0F2F2;
+    position: fixed;
+    box-shadow: 2px 1px 4px #0B1726;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: end;
+    height: 100%;
+
+}
+
+.navbar img {
+    height: 50%;
+    padding-left: 1.67rem;
+    flex-wrap: nowrap;
+}
+
+.navitems {
+    list-style: none;
+    display: inline-flex;
+    padding: 0rem 2rem;
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.navbar ul li a {
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    color: #0B1726;
+}
+
+.navbar ul li a div {
+    line-height: 3.5rem;
+}
+
+.navitems:hover {
+    background-color: #C1C9D9;
+}
+
+.subtitle {
+    text-align: center;
+    padding: 2rem 0rem 1rem 0rem;
+    color: #A68D85;
+    font-family: "Playfair Bold";
+    font-size: 3rem;
+    padding-bottom: 3rem;
+}
+
+#featured {
+    padding-top: 1rem;
+}
+
+#featuredsection {
+    display: flex;
+    justify-content: space-around;
+    align-items: top;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.featureditem {
+    padding: 2rem;
+    background-color: #C1C9D9;
+    margin: 2rem;
+}
+
+.featureddescription {
+    color: #0B1726;
+    max-width: 13rem;
+    min-width: 8rem;
+    text-align: center;
+}
+
+.featuredimage {
+    padding-bottom: 2rem;
+    height: 16.67rem;
+}
+
+.team {
+    margin: auto;
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+
+.teammembers {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.member {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 1rem 0rem;
+    align-items: center;
+}
+
+.memberclip {
+    width: 11rem;
+    padding-right: 2rem;
+}
+
+.teamintro p {
+    text-align: justify;
+}
+
+/* FOOTER */
+footer {
+    padding: 2rem;
+    background-color: #0B1726;
+    color: #F0F2F2;
+}
+
+.footermaincontent {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.addresses {
+    padding-right: 2rem;
+}
+
+.bold {
+    font-family: "Playfair Bold";
+}
+
+footer h4 {
+    padding-bottom: 1rem;
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    html {
+        font-size: 16px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+    footer h4 {
+        padding: 0rem 0rem 1rem 3.2rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    html {
+        font-size: 14px;
+    }
+
+    .bannertext {
+        top: 40%;
+        left: 25%;
+    }
+
+    .bannertext p {
+        margin-bottom: 10px;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+
+    footer h4 {
+        padding: 0rem 0rem 1rem 2.5rem;
+    }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+
+    html {
+        font-size: 8px;
+    }
+
+    .bannertext {
+        visibility: hidden;
+    }
+
+
+    .memberclip {
+        width: 9rem;
+    }
+
+
+    .content {
+        justify-content: space-evenly;
+    }
+
+
+
+    footer {
+        font-size: 6px;
+    }
+}
+
+
+
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+
+    html {
+        font-size: 6px;
+    }
+
+    .bannertext {
+        top: 15%;
+        left: 25%;
+    }
+
+
+    .bannertext p {
+        margin-bottom: 2px;
+    }
+
+    .memberclip {
+        width: 9rem;
+    }
+
+    footer {
+        font-size: 4px;
+    }
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+
+    html {
+        font-size: 6px;
+    }
+
+    .bannertext {
+        top: 13%;
+        left: 17%;
+    }
+
+
+
+    .bannertext p {
+        margin-bottom: 2px;
+    }
+
+
+    .memberclip {
+        width: 12rem;
+    }
+
+    .team {
+        margin: auto;
+        width: 70%;
+    }
+
+    footer {
+        font-size: 4px;
+    }
+}
